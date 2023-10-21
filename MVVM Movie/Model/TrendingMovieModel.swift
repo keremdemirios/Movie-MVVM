@@ -1,15 +1,13 @@
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
 //
-//  TrendingMoviesModels.swift
-//  MVVM Movie
-//
-//  Created by Kerem Demir on 16.10.2023.
-//
+//   let welcome = try? JSONDecoder().decode(Welcome.self, from: jsonData)
 
 import Foundation
 import UIKit
 
 // MARK: - Welcome
-struct TrendingMoviesModel: Codable {
+struct TrendingMovieModel: Codable {
     let page: Int
     let results: [Movie]
     let totalPages, totalResults: Int
@@ -70,7 +68,7 @@ enum MediaType: String, Codable {
 enum OriginalLanguage: String, Codable {
     case en = "en"
     case es = "es"
-    case ja = "ja"
-    case sv = "sv"
+    case ko = "ko"
 }
+
 

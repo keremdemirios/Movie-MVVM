@@ -17,7 +17,7 @@
 		4174CAE62ADDBBF200BB2D17 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAE52ADDBBF200BB2D17 /* MainViewModel.swift */; };
 		4174CAE82ADDC32A00BB2D17 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAE72ADDC32A00BB2D17 /* NetworkConstant.swift */; };
 		4174CAEA2ADDC44800BB2D17 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAE92ADDC44800BB2D17 /* APICaller.swift */; };
-		4174CAEC2ADDC47800BB2D17 /* TrendingMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAEB2ADDC47800BB2D17 /* TrendingMoviesModel.swift */; };
+		4174CAEC2ADDC47800BB2D17 /* TrendingMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAEB2ADDC47800BB2D17 /* TrendingMovieModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		4174CAE52ADDBBF200BB2D17 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		4174CAE72ADDC32A00BB2D17 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		4174CAE92ADDC44800BB2D17 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
-		4174CAEB2ADDC47800BB2D17 /* TrendingMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMoviesModel.swift; sourceTree = "<group>"; };
+		4174CAEB2ADDC47800BB2D17 /* TrendingMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMovieModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 		4174CADC2ADDB47B00BB2D17 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4174CAEB2ADDC47800BB2D17 /* TrendingMoviesModel.swift */,
+				4174CAEB2ADDC47800BB2D17 /* TrendingMovieModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,7 +232,7 @@
 				4174CAD92ADDB3F100BB2D17 /* HomeViewController.swift in Sources */,
 				4174CAE82ADDC32A00BB2D17 /* NetworkConstant.swift in Sources */,
 				4174CAE42ADDBACF00BB2D17 /* HomeViewController+TableView.swift in Sources */,
-				4174CAEC2ADDC47800BB2D17 /* TrendingMoviesModel.swift in Sources */,
+				4174CAEC2ADDC47800BB2D17 /* TrendingMovieModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

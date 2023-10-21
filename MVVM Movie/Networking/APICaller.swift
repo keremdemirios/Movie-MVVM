@@ -3,7 +3,6 @@
 //  MVVM Movie
 //
 //  Created by Kerem Demir on 16.10.2023.
-//
 
 import Foundation
 import UIKit
@@ -13,22 +12,25 @@ enum NetworkError: Error {
     case canNotParseData
 }
 
-class APICaller {
+public class APICaller {
     
-    static func getTrendingMovies(completionHandler: @escaping (_ result: Result<TrendingMoviesModel, NetworkError>) -> Void ) {
-        
-        let urlString = NetworkConstant.shared.serverAdress + "trending/all/day?api=key" + NetworkConstant.shared.apiKey
+    static func getTrendingMovies(completionHandler: @escaping (_ result: Result<TrendingMovieModel, NetworkError>) -> Void ) {
+        let urlString = NetworkConstant.shared.serverAdress +
+                        "trending/movie/day?api_key=" +
+                        NetworkConstant.shared.apiKey
         
         guard let url = URL(string: urlString) else {
             completionHandler(.failure(.urlError))
             return
         }
         
-        URLSession.shared.dataTask(with: url) { data, urlResponse, error in
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            print("Error : \(String(describing: error?.localizedDescription))")
             if error == nil,
-                let data = data,
-                let resultJson = try? JSONDecoder().decode(TrendingMoviesModel.self, from: data) {
-                    completionHandler(.success(resultJson))
+               let data = data,
+               let resultData = try? JSONDecoder().decode(TrendingMovieModel.self, from: data) {
+                print(resultData)
+                completionHandler(.success(resultData))
             } else {
                 completionHandler(.failure(.canNotParseData))
             }

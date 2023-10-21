@@ -15,7 +15,7 @@ class NetworkConstant {
     private init() {
         // singletone
     }
-    
+//https://api.themoviedb.org/3/trending/movie/day?language=en-US
     public var apiKey: String {
         get {
             // API KEY
@@ -25,7 +25,7 @@ class NetworkConstant {
     
     public var serverAdress: String {
         get {
-            return "https://api.themoviedb.org/3"
+            return "https://api.themoviedb.org/3/"
         }
     }
     
@@ -35,3 +35,4 @@ class NetworkConstant {
         }
     }
 }
+//https://api.themoviedb.org/3/trending/movie/day?api_key=9d4e2bb4b5c9913f7dfecec00f852fc2

@@ -22,8 +22,10 @@ class MainViewModel {
         APICaller.getTrendingMovies { result in
             switch result {
             case .success(let data):
+                print("Burda")
                 print("Top trending count : \(data.results.count)")
             case .failure(let error):
+//                print("Burda hata.")
                 print("Error : \(error)")
             }
         }
