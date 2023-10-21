@@ -1,5 +1,5 @@
 //
-//  MainViewController+TableView.swift
+//  HomeViewController+TableView.swift
 //  MVVM Movie
 //
 //  Created by Kerem Demir on 16.10.2023.

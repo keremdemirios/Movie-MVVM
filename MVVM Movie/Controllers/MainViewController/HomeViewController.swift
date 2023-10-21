@@ -20,6 +20,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         configure()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        viewmModel.getData()
+    }
+    
     // MARK : Configure
     private func configure(){
         title = "Home"
@@ -37,3 +42,4 @@ class HomeViewController: UIViewController {
     // MARK : Actions
 
 }
+
