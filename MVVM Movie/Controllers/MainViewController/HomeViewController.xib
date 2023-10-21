@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MVVM_Movie" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicatorView" destination="zaU-Cx-keV" id="ciy-hf-56n"/>
                 <outlet property="tableView" destination="A7s-I1-zXa" id="xcQ-Jd-d2G"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,6 +24,10 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zaU-Cx-keV">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" systemColor="systemGray2Color"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -30,7 +35,9 @@
                 <constraint firstItem="A7s-I1-zXa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6Ol-NN-M4r"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="A7s-I1-zXa" secondAttribute="bottom" id="FiW-UZ-0uN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A7s-I1-zXa" secondAttribute="trailing" id="Lqr-0a-oq7"/>
+                <constraint firstItem="zaU-Cx-keV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UK9-h0-G3V"/>
                 <constraint firstItem="A7s-I1-zXa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aT1-ck-NfS"/>
+                <constraint firstItem="zaU-Cx-keV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="o3C-94-MK7"/>
             </constraints>
             <point key="canvasLocation" x="140" y="20"/>
         </view>
@@ -38,6 +45,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

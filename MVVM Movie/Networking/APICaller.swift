@@ -27,11 +27,10 @@ public class APICaller {
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
-                completionHandler(.failure(.error))
+                completionHandler(.failure(error as! NetworkError))
             }
             if let data = data {
                 do {
-//                    print(String(data: data, encoding: .utf8) as Any)
                     let result = try JSONDecoder().decode(TrendingMovieModel.self, from: data)
                     completionHandler(.success(result))
                 } catch let parseError{

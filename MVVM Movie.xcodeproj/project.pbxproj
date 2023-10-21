@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4131E7352AE454DA00FCB1A1 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4131E7342AE454D900FCB1A1 /* Observable.swift */; };
 		4174CAC32ADDB22100BB2D17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAC22ADDB22100BB2D17 /* AppDelegate.swift */; };
 		4174CAC52ADDB22100BB2D17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAC42ADDB22100BB2D17 /* SceneDelegate.swift */; };
 		4174CACC2ADDB22300BB2D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4174CACB2ADDB22300BB2D17 /* Assets.xcassets */; };
@@ -14,13 +15,14 @@
 		4174CAD92ADDB3F100BB2D17 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAD72ADDB3F100BB2D17 /* HomeViewController.swift */; };
 		4174CADA2ADDB3F100BB2D17 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4174CAD82ADDB3F100BB2D17 /* HomeViewController.xib */; };
 		4174CAE42ADDBACF00BB2D17 /* HomeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAE32ADDBACF00BB2D17 /* HomeViewController+TableView.swift */; };
-		4174CAE62ADDBBF200BB2D17 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAE52ADDBBF200BB2D17 /* MainViewModel.swift */; };
+		4174CAE62ADDBBF200BB2D17 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAE52ADDBBF200BB2D17 /* HomeViewModel.swift */; };
 		4174CAE82ADDC32A00BB2D17 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAE72ADDC32A00BB2D17 /* NetworkConstant.swift */; };
 		4174CAEA2ADDC44800BB2D17 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAE92ADDC44800BB2D17 /* APICaller.swift */; };
 		4174CAEC2ADDC47800BB2D17 /* TrendingMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174CAEB2ADDC47800BB2D17 /* TrendingMovieModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4131E7342AE454D900FCB1A1 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		4174CABF2ADDB22100BB2D17 /* MVVM Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Movie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4174CAC22ADDB22100BB2D17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4174CAC42ADDB22100BB2D17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +32,7 @@
 		4174CAD72ADDB3F100BB2D17 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4174CAD82ADDB3F100BB2D17 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		4174CAE32ADDBACF00BB2D17 /* HomeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableView.swift"; sourceTree = "<group>"; };
-		4174CAE52ADDBBF200BB2D17 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		4174CAE52ADDBBF200BB2D17 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4174CAE72ADDC32A00BB2D17 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		4174CAE92ADDC44800BB2D17 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		4174CAEB2ADDC47800BB2D17 /* TrendingMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMovieModel.swift; sourceTree = "<group>"; };
@@ -117,7 +119,7 @@
 		4174CADE2ADDB48700BB2D17 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				4174CAE52ADDBBF200BB2D17 /* MainViewModel.swift */,
+				4174CAE52ADDBBF200BB2D17 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -125,6 +127,7 @@
 		4174CADF2ADDB48A00BB2D17 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4131E7342AE454D900FCB1A1 /* Observable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -225,10 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4174CAE62ADDBBF200BB2D17 /* MainViewModel.swift in Sources */,
+				4174CAE62ADDBBF200BB2D17 /* HomeViewModel.swift in Sources */,
 				4174CAC32ADDB22100BB2D17 /* AppDelegate.swift in Sources */,
 				4174CAC52ADDB22100BB2D17 /* SceneDelegate.swift in Sources */,
 				4174CAEA2ADDC44800BB2D17 /* APICaller.swift in Sources */,
+				4131E7352AE454DA00FCB1A1 /* Observable.swift in Sources */,
 				4174CAD92ADDB3F100BB2D17 /* HomeViewController.swift in Sources */,
 				4174CAE82ADDC32A00BB2D17 /* NetworkConstant.swift in Sources */,
 				4174CAE42ADDBACF00BB2D17 /* HomeViewController+TableView.swift in Sources */,
