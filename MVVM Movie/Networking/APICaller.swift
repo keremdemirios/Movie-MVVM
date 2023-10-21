@@ -9,6 +9,7 @@ import UIKit
 
 enum NetworkError: Error {
     case urlError
+    case error
     case canNotParseData
 }
 
@@ -25,14 +26,18 @@ public class APICaller {
         }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
-            print("Error : \(String(describing: error?.localizedDescription))")
-            if error == nil,
-               let data = data,
-               let resultData = try? JSONDecoder().decode(TrendingMovieModel.self, from: data) {
-                print(resultData)
-                completionHandler(.success(resultData))
-            } else {
-                completionHandler(.failure(.canNotParseData))
+            if let error = error {
+                completionHandler(.failure(.error))
+                print("Error : \(error)")
+            }
+            if let data = data {
+                do {
+                    let result = try JSONDecoder().decode(TrendingMovieModel.self, from: data)
+                    completionHandler(.success(result))
+                } catch let parseError{
+                    print(parseError)
+                    completionHandler(.failure(.canNotParseData))
+                }
             }
         }.resume()
     }
