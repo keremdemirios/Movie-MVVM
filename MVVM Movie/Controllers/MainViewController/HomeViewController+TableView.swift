@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func setupTableView(){
         tableView.delegate = self
         tableView.dataSource = self
@@ -21,7 +22,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
     
-    func reloadTableView(){
+    func reloadTableView() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
