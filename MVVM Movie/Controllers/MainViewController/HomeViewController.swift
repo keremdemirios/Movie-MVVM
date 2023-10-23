@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
     var viewmModel: HomeViewModel = HomeViewModel()
     
     // Variables :
-    var cellDataSource: [Movie] = []
+    var cellDataSource: [MovieTableCellViewModel] = []
     // MARK : Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
     // MARK : Configure
     private func configure(){
         title = "Home"
-        view.backgroundColor = .red
+        view.backgroundColor = .systemBackground
         
         setupTableView()
         setupUI()
@@ -52,6 +52,7 @@ class HomeViewController: UIViewController {
                     self.activityIndicatorView.startAnimating()
                 } else {
                     self.activityIndicatorView.stopAnimating()
+                    self.activityIndicatorView.isHidden = true
                 }
             }
         }
